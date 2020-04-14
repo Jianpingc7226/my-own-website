@@ -36,14 +36,14 @@ li a:hover:not(.active) {
 .text{
   text-align: left, justify;
   font-style: italic;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .top-img{
-  height: 333px;
-  width: 450px;
+  height: 500px;
+  width: 900px;
+  
 }
-
 
 
 
@@ -56,3 +56,9 @@ hr {
     background-image: linear-gradient(to right, rgba(248, 246, 246, 0), rgba(14, 13, 13, 0.795), rgba(248, 246, 246, 0));
 }
 
+.block{
+  width: 100%;
+  background-color: black;
+  height: 44px;
+
+}
