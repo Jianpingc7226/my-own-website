@@ -9,31 +9,87 @@
   <body>
 
   <ul>
-    <li><a href="#index.html"><img src="LogoMakr_2ubFXD.png" height="21px"></a></li>
+    <li><a href="index.html"><img src="LogoMakr_2ubFXD.png" height="21px"></a></li>
     <li><a href="Sort.html">Sorts</a></li>
     <li><a href="about.html">About</a></li>
   </ul>
     <div class="block">
     </div>
 
-  <img src="RP_Gut_microbiota_science_2019.png" Class="center top-img">
+  <div class="slideshow-container">
+
+    
+    <div class="mySlides fade">
+      <img src="img1.jpg" class="slaidimg">
+      <div class="text">Science</div>
+    </div>
+
+    <div class="mySlides fade">
+
+      <img src="img2.jpg" class="slaidimg">
+      <div class="text">Science!!</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img3.jpg" class="slaidimg">
+      <div class="text">more Science</div>
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
   <h1>This site is about science, you should understand before previewing the site</h1>
 
   <h5>(Don't want to read the following information, please move to sort)</h5>
 
   <hr>
-
+ <div class="try">
   <h2>What is science?</h2>
-
-  <p class="text">
+  <p class="text2">
     Science is a systematic knowledge system, which accumulates and organizes and can examine the explanations and predictions about the universe. Science emphasizes the specificity and falsifiability of prediction results, which is different from the general philosophy. Science is not the same as seeking absolute truth, but on the basis of the existing, groping and approaching the truth continuously. Therefore, the history of the development of science is a history of correcting the deviation of human understanding of the universe.
-
 </p>
-
+ </div>
+<div class="try">
   <h2>Why does science exist? Why should we study science?</h2>
-
-  <p class="text">
+  <p class="text2">
 Science studies various knowledge through detailed classification (such as mathematics, physics, chemistry, etc.) to form a gradually complete knowledge system. It is the knowledge about discovering the practice of invention and creation, and it is the general term for the knowledge system of human exploration and study to perceive the law of changes in the universe. Science is a system of orderly knowledge built on verifiable interpretation and prediction of the form and organization of objective things. The scientific achievements are extraordinary. They provide an explanation for everything: from the origin of human culture to the pathfinding mechanism of insects, from the formation of black holes to the operation of black markets. Science has also clarified our moral judgment and aesthetic sensibility. Their focused gaze falls on the most basic components of the universe and their birth moments. They have witnessed our intimate private activities and collective public behavior. The way in which science operates is breathtaking, making it handy even when dealing with events that occurred in the distant past or future, invisible, intangible, and difficult to touch. Because of this, science reminds us to pay attention to the most important human nature problems. If these problems are to be solved, then science needs to play a vital role in it.
   </p>
+</div>
+  <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
   </body>
 </html>
